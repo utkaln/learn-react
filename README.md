@@ -90,6 +90,13 @@
 * Styling: off the shelf is good enough
 
 
+## Components
+Fundamental units of react. Each component is responsible for an element in DOM.
+
+#### Component | Props | State | Render | Virtual DOM
+
+
+
 ### Useful Examples:
 * Entry point element
 ```JSX
