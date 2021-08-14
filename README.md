@@ -96,12 +96,22 @@ Fundamental units of react. Each component is responsible for an element in DOM.
 #### Component | Props | State | Render | Virtual DOM
 
 
-
-### Useful Examples:
-* Entry point element
+## Starter Elements
+index.js starts looking for the following line to start rendering the DOM. All code should go to a class or function (preferred)
 ```JSX
-document.getElementById(‘mountNode’)
+ReactDOM.render(<Hello/>, document.getElementById("root"));
+
 ```
+
+A starter function description. props is the property through which parameters can be sent encapsulated in an object
+```JSX
+function Hello(props){
+  return <h1> Hello World </h1>;
+}
+
+```
+
+### Useful Tips:
 
 * React uses JSX extension and not HTML. Babel is used to convert JSX to JS on the browser
 * Component names must start with Upper case
