@@ -1,6 +1,6 @@
 # learn-react
 
-## React Community
+### React Community
 * Reactiflux - [reactiflux](https://www.reactiflux.com), [github](https://github.com/reactiflux/reactiflux.com)
 * Microsoft React Libraries - [github](https://github.com/microsoft/fluentui/wiki/Getting-Started-with-UI-Fabric)
 * Material-ui [material-ui](https://material-ui.com)
@@ -20,7 +20,7 @@
 
 
 
-## Resources:
+### Resources:
 [Chapter wise Experiments from Pluralsight](jscomplete.com/playground/rgs1.1) 
 
 
@@ -90,13 +90,13 @@
 * Styling: off the shelf is good enough
 
 
-## Components
+### Components
 Fundamental units of react. Each component is responsible for an element in DOM.
 
 #### Component | Props | State | Render | Virtual DOM
 
 
-## Starter Elements
+### Starter Elements
 index.js starts looking for the following line to start rendering the DOM. All code should go to a class or function (preferred)
 ```JSX
 ReactDOM.render(<Hello/>, document.getElementById("root"));
@@ -118,8 +118,10 @@ function Hello(props){
 * Component names must start with Upper case
 * Prefer function over class
 * Prefer props over state
-* 
+* Use parent function to show multiple components at one display, use <div> tag or <> to create hierarchy  
+* Props is a parameter that is passed from parent to child component, particularly to send state objects
 * useState object to get handle for get and set called a hook in react, initialized with 0
+
 ```JSX
 const [counter, setCounter] = userState(0)
 ```
@@ -132,12 +134,21 @@ function Button() {
 }
 ```
 
-* Use parent function to show multiple components at one display, use <div> tag or <> to create hierarchy  
-  * Props is a parameter that is passed from parent to child component, particularly to send state objects
 
 ### Mapping of HTML element with JSX
+> HTML
+```html
+  <label for="name" class="header" style="background-color: yellow"> Display Text </label>
+```
   
-
+> JSX
+```JSX
+  <label htmlFor="name" className="highlight" style={{backgroundColor: "yellow"}}> Display Text </label> 
+```
+  
+  * HTML expects a css element for the label <b>style</b>  <b> Vs. </b> JSX expects json like structure for style
+  
+  
 =============
 # Getting Started with Create React App
 
