@@ -114,12 +114,16 @@ function Hello(props){
 ### Useful Tips:
 
 * React uses JSX extension and not HTML. Babel is used to convert JSX to JS on the browser
+* TypeScript is another language that can 
 * Component names must start with Upper case
+* Prefer function over class
+* Prefer props over state
+* 
 * useState object to get handle for get and set called a hook in react, initialized with 0
 ```JSX
 const [counter, setCounter] = userState(0)
 ```
-* Labels rendered can take dynamic value, Example below:
+* Labels rendered can take dynamic value, Example below:N
 
 ```JSX
 function Button() { 
@@ -131,6 +135,8 @@ function Button() {
 * Use parent function to show multiple components at one display, use <div> tag or <> to create hierarchy  
   * Props is a parameter that is passed from parent to child component, particularly to send state objects
 
+### Mapping of HTML element with JSX
+  
 
 =============
 # Getting Started with Create React App
