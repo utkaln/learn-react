@@ -146,7 +146,16 @@ function Button() {
   <label htmlFor="name" className="highlight" style={{backgroundColor: "yellow"}}> Display Text </label> 
 ```
   
-  * HTML expects a css element for the label <b>style</b>  <b> Vs. </b> JSX expects json like structure for style
+* HTML expects a css element for the label ```style```  <b> Vs. </b> JSX expects json like structure for style
+* JSX : attribute names are written as camelCase. ```for``` and ```class``` are javascript reserved attribute names, hence JSX uses ```htmlFor``` and ```className``` as JSX attribute names 
+  
+
+  
+  
+  
+  
+  
+  
   
   
 =============
